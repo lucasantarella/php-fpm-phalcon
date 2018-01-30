@@ -4,7 +4,7 @@ MAINTAINER Luca Santarella <luca.santarella@gmail.com>
 # Install MySql PDO
 RUN docker-php-ext-install pdo pdo_mysql
 
-ENV PHALCON_VERSION=3.1.2
+ENV PHALCON_VERSION=3.3.1
 
 WORKDIR /var/tmp
 
@@ -29,4 +29,4 @@ RUN set -xe && \
         mv phalcon-devtools-${PHALCON_VERSION} /usr/local/phalcon-devtools && \
         ln -s /usr/local/phalcon-devtools/phalcon.php /usr/local/bin/phalcon
 
-WORKDIR /var/www/html
+WORKDIR /
